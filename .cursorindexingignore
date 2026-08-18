@@ -1,0 +1,15 @@
+# Some do @codebase / busca semantica; ainda da para @-mencionar
+graphify-out/
+vendor/
+coverage/
+*.min.js
+*.min.css
+*.map
+*.bundle.js
+dumps/
+backup/
+backups/
+tmp/
+temp/
+*.log
+
