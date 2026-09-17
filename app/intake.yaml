@@ -1,0 +1,53 @@
+# Ficha lite — copiar para app/intake.yaml na solucao
+# Campos alinhados ao playbook torre-gestao-projetos
+
+id: "INI-XXX"
+titulo: ""
+caminho: lite  # lite | full
+tipo: projeto  # projeto | produto | iniciativa | rotina | acao
+natureza: TI   # TI | nao-TI | hibrida
+processo: Transporte
+classificacao: Internal
+
+problema: ""
+resultado_esperado: ""
+valor: ""
+
+owner:
+  nome: ""
+  matricula: ""
+  email: ""
+po:
+  nome: ""
+
+prioridade: media
+dependencias: []
+riscos: []
+
+epic:
+  titulo: ""
+  descricao: ""
+features:
+  - titulo: ""
+    descricao: ""
+    stories:
+      - titulo: ""
+        como: ""
+        quero: ""
+        para: ""
+        aceite:
+          - ""
+        tasks:
+          - titulo: ""
+            estimativa_h: 0
+
+area_path: ""
+iteration_path: ""
+repo_devops: ""
+
+tech4all:
+  elegivel: false        # true se usa ferramenta democratizada ou recurso de franquia
+  franquia: ""           # "Seguranca empresarial" quando nasce na franquia
+  ferramentas: []        # Power BI, Power Apps, Databricks, ...
+  status_catalogo: ""    # nao_aplicavel | pendente | cadastrado
+  catalogo_url: ""

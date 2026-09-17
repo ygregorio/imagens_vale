@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "imagens_vale — acervo visual",
+    "output": "docs/diagrams/archify/pipeline.html",
+    "viewBox": [
+      1080,
+      520
+    ],
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "caminho-feliz",
+        "label": "Caminho feliz",
+        "focus": [
+          "raw",
+          "cat",
+          "use"
+        ],
+        "note": "imagens_vale — acervo visual"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "label": "Fonte"
+    },
+    {
+      "label": "Landing"
+    },
+    {
+      "label": "Processamento"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "raw",
+      "type": "cloud",
+      "label": "Pastas assets",
+      "sublabel": "PNG/SVG",
+      "stage": 0,
+      "row": 1,
+      "tag": "fonte"
+    },
+    {
+      "id": "cat",
+      "type": "backend",
+      "label": "Catálogo",
+      "sublabel": "metadados",
+      "stage": 1,
+      "row": 1,
+      "tag": "idx"
+    },
+    {
+      "id": "use",
+      "type": "frontend",
+      "label": "Consumo",
+      "sublabel": "design/IA",
+      "stage": 2,
+      "row": 1,
+      "tag": "uso"
+    }
+  ],
+  "flows": [
+    {
+      "id": "f0",
+      "from": "raw",
+      "to": "cat",
+      "label": "indexa",
+      "classification": "local",
+      "variant": "emphasis",
+      "route": "straight",
+      "labelDy": 42
+    },
+    {
+      "id": "f1",
+      "from": "cat",
+      "to": "use",
+      "label": "busca",
+      "classification": "termo",
+      "variant": "emphasis",
+      "route": "straight",
+      "labelDy": 42
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Papel",
+      "items": [
+        "Acervo visual Vale"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Relacionado",
+      "items": [
+        "Ver catalogo_imagens"
+      ]
+    }
+  ]
+}
