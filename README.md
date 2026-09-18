@@ -9,9 +9,36 @@ imagens_vale — acervo visual.
 
 ## Arquitetura
 
+```mermaid
+flowchart LR
+  subgraph internet ["INTERNET"]
+    direction TB
+    subgraph saas ["SaaS Microsoft 365"]
+      ADO["Azure DevOps"]
+    end
+  end
+
+  subgraph it ["IT ValeNet"]
+    direction TB
+      RAW["Acervo"]
+      CAT["Índice"]
+      USE["Consumo"]
+  end
+
+  RAW --> CAT
+  CAT --> USE
+
+  classDef zonaIT fill:#0d3d38,stroke:#2ec4b6,color:#d4f5f0
+  classDef zonaInternet fill:#3a1520,stroke:#e85d4c,color:#ffd4ce
+  classDef z fill:#1a2332,stroke:#8b949e,color:#e6edf3
+  class it zonaIT
+  class internet zonaInternet
+  class ADO,RAW,CAT,USE z
+```
+
 ![Arquitetura](./docs/diagrams/archify/pipeline.png)
 
-> PNG Archify para Overview do Azure DevOps. Fluxo animado: [docs/02-arquitetura.md](docs/02-arquitetura.md).
+> Flowchart = padrão interativo (Cursor/Git). PNG Archify = fallback Overview Azure DevOps. Live/Still: [docs/02-arquitetura.md](docs/02-arquitetura.md).
 
 ## Documentação
 
