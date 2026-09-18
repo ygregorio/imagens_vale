@@ -36,9 +36,7 @@ flowchart LR
   class ADO,RAW,CAT,USE z
 ```
 
-![Arquitetura](./docs/diagrams/archify/pipeline.png)
-
-> Flowchart = padrão interativo (Cursor/Git). PNG Archify = fallback Overview Azure DevOps. Live/Still: [docs/02-arquitetura.md](docs/02-arquitetura.md).
+> Flowchart zonas = diagrama do README. HTML Archify (Live/Still) e PNG: [docs/02-arquitetura.md](docs/02-arquitetura.md).
 
 ## Documentação
 
